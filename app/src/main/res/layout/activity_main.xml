@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"/>
+
+    <EditText
+        android:id="@+id/userAgeEditText"
+        android:layout_below="@id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/userEmailEditText"
+        android:layout_below="@id/userAgeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"/>
+
+    <EditText
+        android:id="@+id/userContactEditText"
+        android:layout_below="@id/userEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Number"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/sendDataButton"
+        android:layout_below="@id/userContactEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Data"/>
+
+</RelativeLayout>
